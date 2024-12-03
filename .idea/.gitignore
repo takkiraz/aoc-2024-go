@@ -1,0 +1,61 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+# Zeppelin ignored files
+/ZeppelinRemoteNotebooks/
+
+.DS_Store
+HELP.md
+.gradle
+/build/
+!gradle/wrapper/gradle-wrapper.jar
+build
+.run
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea/**
+*.iws
+*.iml
+*.ipr
+/out/
+*/out
+test_exports/*.csv
+test_exports/*.xls
+test_exports/*.xlsx
+test_exports/*.pdf
+
+### Private Files
+*.private.env.json
+
+# Allow specific files from.idea folder
+!/.idea/codeStyles/**
+!/.idea/compiler.xml
+!/.idea/kotlinc.xml
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+
+offer/logs/*
+logs/*
