@@ -59,3 +59,6 @@ test_exports/*.pdf
 
 offer/logs/*
 logs/*
+
+### ignore all input-user.txt files
+**/input-user.txt
