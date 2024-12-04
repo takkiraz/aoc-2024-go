@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"github.com/jpillora/puzzler/harness/aoc"
 	"regexp"
 	"strings"
@@ -25,11 +24,6 @@ func run(part2 bool, input string) any {
 	re := regexp.MustCompile(`XMAS`)
 	reBackwards := regexp.MustCompile(`SAMX`)
 
-	fmt.Println("Lines", len(lines))
-	fmt.Println("Rows", len(lines[0]))
-	fmt.Println("BorderX", len(lines[0])-len("XMAS"))
-	fmt.Println("BorderY", len(lines)-len("XMAS"))
-
 	for i, line := range lines {
 
 		if !part2 {
@@ -45,10 +39,6 @@ func run(part2 bool, input string) any {
 				xmasCount += countXmasPart2(lines, j, i)
 			}
 		}
-	}
-
-	for _, line := range lines {
-		fmt.Println(line)
 	}
 
 	return xmasCount
