@@ -11,22 +11,8 @@ func main() {
 	aoc.Harness(run)
 }
 
-// on code change, run will be executed 4 times:
-// 1. with: false (part1), and example input
-// 2. with: true (part2), and example input
-// 3. with: false (part1), and user input
-// 4. with: true (part2), and user input
-// the return value of each run is printed to stdout
 func run(part2 bool, input string) any {
 	var reports [][]int
-
-	var part int
-	if part2 {
-		part = 2
-	} else {
-		part = 1
-	}
-	fmt.Println("Day 2 - Part", part)
 
 	var safeReportsCount = 0
 
@@ -65,7 +51,6 @@ func run(part2 bool, input string) any {
 
 func IsBadLevel(level int, nextLevel int, ascending bool) bool {
 	distance := nextLevel - level
-	//fmt.Println("Distance", distance)
 	return (distance <= 0 && ascending) || (distance >= 0 && !ascending) || distance < -3 || distance > 3
 }
 
